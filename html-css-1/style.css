@@ -1,0 +1,125 @@
+
+body{
+    background-color: white;
+    height: 200vh;
+    width: 100vw;
+    position:absolute;
+}
+
+.know{
+    background-color: black;
+    height: 30vh;
+    width: 100vw;
+    position: relative;
+    
+}
+#gtext{
+    color: gold;
+    text-size-adjust: large;
+    
+
+}
+
+
+.tresquare{
+    background-color: white;
+    height:30vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.square{
+    background-color: turquoise;
+    height:200px;
+    width: 200px;
+    border-radius: 15%;
+}
+.twosquare{
+    background-color: white;
+    height:30vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.tsquare{
+    background-color: orange;
+    height:200px;
+    width: 400px;
+   
+}
+
+.inc{
+    background-color: white;
+    height:30vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.infop{
+    background-color: white;
+    height:200px;
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+   
+}
+.img{
+    background-color: tomato;
+    background-size: cover;
+    height: 200px;
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: xx-large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: rgb(16, 16, 34);
+    height: 125px;
+    width: 100vw;
+    bottom: 0;
+}
