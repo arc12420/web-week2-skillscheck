@@ -27,7 +27,7 @@ let me = {
     homeTown: "Mapleton",
     superPowers: ["Talk to fish", "Sonar", "Strength"],
     superPowerXP: function() {
-         Math.floor(Math.random() * 100) + 1
+         return Math.floor(Math.random() * 100) + 1 
       },      
     profileImage: () => `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`
 }
@@ -45,16 +45,15 @@ let homeTown = me.homeTown
 // Next, create a for loop to loop over the remaining three colors. If any of the colors is 'blue', change it's value to '#4D4DFF' (which is just a more appealing shade of blue). Outside of the for loop but still inside of setColor, invoke the function called 'background' which will take in three arguments. These arguments should be the three items remaining in your colors array. 
 
 function setColor(arr){
-    if(arr.length > 3){
-        arr.splice(arr.length -1)
-    } 
+        arr.splice(3)
+     
     for(let i = 0; i < arr.length; i++){
-        if(arr[i] === "Blue"){
+        if(arr[i] === "blue"){
           arr[i] = ("#4D4DFF")
         }
     
  }
- background()
+ background(...arr)
 }
 
 //////////////////Step 5////////////////////
@@ -62,7 +61,7 @@ function setColor(arr){
 
 function setPowers(arr){
     for(let i = 0; i < arr.length; i++){
-        createLi()  
+        createLi(arr[i])  
     }
           
 }
@@ -71,6 +70,6 @@ function setPowers(arr){
 //Lastly, create a function called 'redactInfo' that will take in an object called 'obj' as a parameter. Now, imagine your super hero needs to go undercover, and you need to remove all info about them. That is what this function will do. In your function, loop over the obj parameter passed in, and change each keys value to 'redacted'. Outside of the loop but still in the redactInfo function, run the function redacted() which is a function we created that will update the text on the screen.
 
 function redactInfo(obj){
-    Object.keys(obj).forEach(function(key){ obj[key] = "redacted" });
+    for(let key in obj){obj[key]="Redacted"}
     redacted()
   }

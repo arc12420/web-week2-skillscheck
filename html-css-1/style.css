@@ -11,11 +11,14 @@ body{
     height: 30vh;
     width: 100vw;
     position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     
 }
-#gtext{
+#gtxt{
     color: gold;
-    text-size-adjust: large;
+    font-size: 50px;
     
 
 }
@@ -93,6 +96,11 @@ body{
     justify-content: space-around;
     align-items: center;
     font-size: xx-large;
+}
+
+img{
+    height:200px;
+    width: 380px;
 }
 
 
